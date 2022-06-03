@@ -1,0 +1,8 @@
+<button class="btn btn-primary" (click)="onPress()">
+  Display details
+</button>
+<p *ngIf="showInformation" > Secret: Vish </p>
+<div  [ngStyle]="{backgroundColor: setColor()}" [ngClass]="{quinto: i > 4 }" >
+ Number of clicks: {{clicks[i-1]}}
+</div>
+

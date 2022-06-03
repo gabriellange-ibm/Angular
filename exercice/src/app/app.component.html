@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12" >
+      <h2>Welcome to the Gaaaaame</h2>
+<!--      <h2>Yes !!!!!!</h2>-->
+      <hr>
+      <app-game-control (operation)="onReceiveCounting($event)"></app-game-control>
+      <hr>
+    </div>
+  </div>
+<!--  <div class="row">-->
+    <div class="col-xs-12">
+      <app-odd *ngFor="let oddNumber of odd" [number]="oddNumber"></app-odd>
+    </div>
+    <div class="col-xs-12">
+      <app-even *ngFor="let evenNumber of even" [number]="evenNumber"></app-even>
+    </div>
+<!--  </div>-->
+</div>
